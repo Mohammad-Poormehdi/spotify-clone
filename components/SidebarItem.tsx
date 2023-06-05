@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import { IconType } from "react-icons";
 import { twMerge } from "tailwind-merge";
+import Button from "./Button";
 
 interface SidebarItemProps {
   icon: IconType;

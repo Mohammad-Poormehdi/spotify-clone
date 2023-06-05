@@ -10,6 +10,7 @@ import Library from "./Library";
 import { Song } from "@/types";
 import usePlayer from "@/hooks/usePlayer";
 import { twMerge } from "tailwind-merge";
+import { useRouter } from "next/navigation";
 
 interface SidebarProps {
   children: React.ReactNode;
@@ -31,7 +32,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children, songs }) => {
         icon: BiSearch,
         label: "search",
         active: pathname === "/search",
-        href: "/search",
+        href: "/search/",
       },
     ],
     [pathname]
